@@ -21,8 +21,10 @@
     <aside>부가정보</aside>
     <footer>바닥글</footer>
     <hr />
+    <!--div가 불충분한 정보를 가진상태로 남용하면 코드 이해도가 떨어짐 -->
+    <!-- WAI-ARIA를 통해 div 속성을 나타냄 -->
     <div role="banner">헤더</div>
-  
+
     <div role="navigation">네이게이션</div>
     <div role="main">
       <div role="article">섹션 콘텐츠</div>
@@ -30,7 +32,6 @@
     </div>
     <div role="complementary">부가정보</div>
     <div role="contentinfo">바닥글</div>
-  
   </body>
 </html>
 `
