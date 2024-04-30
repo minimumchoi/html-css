@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>스크립팅 요소</title>
-  <link rel="stylesheet" href="./style/card.css" />
-  <script src="./js/card.js" type="module"></script>
-  <noscript>
-    <p>Javascript를 지원하지 않은 환경에서는 서비스를 이용할 수 없습니다.</p>
-  </noscript>
-</head>
-<body>
-  <button type="button" class="flip-button">카드 뒤집기</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스크립팅 요소</title>
+    <link rel="stylesheet" href="./style/card.css" />
+    <!-- 스크립트가 상단에 있을경우 defet속성을 넣어야함 -->
+    <!-- 또는 Type 속성 "module"로 -->
+    <!-- 스크립트를 하단에 넣으면 돔트리 완성된 후 라서 상관없음 -->
+    <script src="./js/card.js" type="module"></script>
+    <noscript>
+      <p>Javascript를 지원하지 않은 환경에서는 서비스를 이용할 수 없습니다.</p>
+    </noscript>
+  </head>
+  <body>
+    <button type="button" class="flip-button">카드 뒤집기</button>
 
-  <div class="card-wrapper">
-    <div class="card">
-      <div class="card-face card-face-black"></div>
-      <div class="card-face card-face-white"></div>
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-face card-face-black"></div>
+        <div class="card-face card-face-white"></div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

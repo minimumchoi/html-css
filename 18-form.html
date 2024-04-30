@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>폼 관련 요소</title>
   </head>
-  <body>
+  <body>    
     <!-- 검색어 입력 서식 예시 -->
+    <!-- 액션속성: 서버주소(데이터를 받아서 처리할) -->
+    <!-- 메서드속성:  get-받기 post-보내기 -->
     <form action="https://formspree.io/seulbinim@gmail.com" method="POST" class="search-form" id="search-form">
+         <!-- fieldset : div요소랑 의미 비슷(그룹핑); 연관성있는 폼서식 묶어줄때 사용; XTML에서만 필수 -->
+      <!-- fieldset와 legend는 세트 -->
       <fieldset>
         <legend>검색</legend>
         <div class="searchform-wrapper">
           <div class="form-input-wrapper">
+                 <!-- 반드시 1대1로 대응되는 lable 서식을 가져야함  -->
+            <!-- 입력서식에 대한 제목 ==> lable  -->
+            <!-- 명시적인 레이블링: label for속성과 input id속성 동일하게  -->
             <label for="search" class="a11yHidden form-input-label">검색어</label>
+             <!-- required속성: 입력 필수라는뜻 -->
+            <!-- label 태그 ≠ placeholder 속성  -->
             <input type="search" id="search" required placeholder="검색어를 입력하세요." name="search" class="form-input" />
           </div>
         </div>
       </fieldset>
     </form>
+    <!-- type 속성 submit :전송 -->
     <button type="submit" class="searchform-button" form="search-form">검색</button>
     <br />
     <!-- 체크 박스 예시 -->

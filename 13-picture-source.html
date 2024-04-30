@@ -6,6 +6,8 @@
     <title>picture, source 요소</title>
   </head>
   <body>
+    <!-- source 태그는 img 보다 위에 있어야함 -->
+    <!-- img태그가 먼저오게되면 source 태그를 건너뜀 -->
     <picture>
       <source
         srcset="./images/netflix@1x.webp 1x, ./images/netflix@2x.webp 2x"
@@ -14,6 +16,7 @@
     </picture>
     <hr />
     <picture>
+      <!-- 요부분 이해 잘 안감 -->
       <source
         srcset="
           ./images/small-550.jpg    550w,
